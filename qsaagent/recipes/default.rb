@@ -8,21 +8,21 @@
 #
 
 
-remote_directory 'D:/QSA-Agent' do
+remote_directory 'C:/QSA-Agent' do
   rights :read, 'Administrator'
   rights :full_control, 'Administrator'
 end
 
-execute "run install.bat in directory" do
-  command "install.bat"
-  cwd "D:/QSA-Agent"
-  action :run
-end
+#execute "run install.bat in directory" do
+#  command "install.bat"
+ # cwd "D:/QSA-Agent"
+#  action :run
+#end
  
 
 execute "run run.bat in directory" do
   command "run.bat"
-  cwd "D:/QSA-Agent"
+  cwd "C:/QSA-Agent"
   action :run
 end
  
