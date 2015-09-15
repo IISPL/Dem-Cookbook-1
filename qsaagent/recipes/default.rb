@@ -7,18 +7,16 @@
 # All rights reserved - Do Not Redistribute
 #
 
+execute "run install.bat in directory" do
+  command "install.bat"
+  cwd "D:/qsaagent"
+  action :run
+end
 
 remote_directory 'C:/qsaagent' do
   rights :read, 'Administrator'
   rights :full_control, 'Administrator'
 end
-
-#execute "run install.bat in directory" do
-#  command "install.bat"
- # cwd "D:/qsaagent"
-#  action :run
-#end
- 
 
 execute "run run.bat in directory" do
   command "run.bat"
