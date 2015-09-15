@@ -18,6 +18,7 @@ remote_directory 'C:/qsaagent' do
   rights :full_control, 'Administrator'
 end
 
+
 execute "run run.bat in directory" do
   command "run.bat"
   cwd "C:/qsaagent"
