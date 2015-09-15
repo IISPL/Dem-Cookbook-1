@@ -1,4 +1,4 @@
-name             'qsaagent2'
+name             'qsaagent'
 maintainer       'IISPL'
 maintainer_email 'prafult@interfaceinfosof.com'
 license          'All rights reserved'
