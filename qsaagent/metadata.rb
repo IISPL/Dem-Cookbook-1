@@ -8,6 +8,6 @@ version          '0.1.0'
 
 depends "windows"
 depends "chrome"
-depends "firefox"
+#depends "firefox"
 depends "opera"
 provides "remote_directory"
