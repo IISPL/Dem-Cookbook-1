@@ -9,7 +9,7 @@
 
 execute "run install.bat in directory" do
   command "install.bat"
-  cwd "D:/qsaagent"
+  cwd "C:/qsaagent"
   action :run
 end
 
