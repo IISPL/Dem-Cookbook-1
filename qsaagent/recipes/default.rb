@@ -8,7 +8,7 @@
 #
 
 
-remote_directory 'C:/qsaagent' do
+remote_directory 'C:/QSprectrum/QSAgent-DesktopWeb' do
   rights :read, 'Administrator'
   rights :full_control, 'Administrator'
 end
