@@ -1,6 +1,6 @@
 def ie_version
   return unless platform_family?('windows')
-  version = ''
+  version = '9'
   registry_get_values('HKLM\SOFTWARE\Microsoft\Internet Explorer').each do |value|
     return value[:data] if value[:name] == 'svcVersion' # ie >= 10
     # http://support.microsoft.com/en-us/kb/969393
