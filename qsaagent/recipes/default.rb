@@ -15,14 +15,14 @@ end
 
 execute "run install.bat in directory" do
   command "install.bat"
- cwd "C:/qsaagent"
+ cwd "C:/QSprectrum/QSAgent-DesktopWeb"
   action :run
 end
  
 
 execute "run run.bat in directory" do
   command "run.bat"
-  cwd "C:/qsaagent"
+  cwd C:/QSprectrum/QSAgent-DesktopWeb"
   action :run
 end
  
