@@ -8,21 +8,21 @@
 #
 
 
-remote_directory 'C:/qsaagent' do
+remote_directory 'C:/QSprectrum/QSAgent-DesktopWeb' do
   rights :read, 'Administrator'
   rights :full_control, 'Administrator'
 end
 
 execute "run install.bat in directory" do
   command "install.bat"
- cwd "C:/qsaagent"
+ cwd "C:/QSprectrum/QSAgent-DesktopWeb"
   action :run
 end
  
 
 execute "run run.bat in directory" do
   command "run.bat"
-  cwd "C:/qsaagent"
+  cwd "C:/QSprectrum/QSAgent-DesktopWeb"
   action :run
 end
  
